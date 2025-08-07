@@ -2,6 +2,7 @@
 title: "About"
 layout: "single"
 url: "/about/"
+hidemeta: true
 ---
 
 Hey! I'm Fabio, and I've been building software since 2011. Currently, a Principal Software Engineer at InDebted, where I work on scaling fintech platforms.
