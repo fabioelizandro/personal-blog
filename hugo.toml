@@ -1,0 +1,40 @@
+baseURL = 'https://elizandro.com.br/'
+languageCode = 'en-us'
+title = 'Fabio Elizandro'
+theme = 'PaperMod'
+
+[params]
+defaultTheme = "light"
+disableThemeToggle = true
+ShowReadingTime = false
+ShowShareButtons = false
+ShowPostNavLinks = false
+ShowBreadCrumbs = false
+ShowCodeCopyButtons = true
+ShowWordCount = false
+ShowRssButtonInSectionTermList = false
+UseHugoToc = false
+disableScrollToTop = true
+comments = false
+hidemeta = true
+hideSummary = true
+showtoc = false
+hideFooter = true
+
+[params.homeInfoParams]
+Title = ""
+Content = ""
+
+[menu]
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 20
+
+[markup]
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+lineNos = false
+style = "github"
