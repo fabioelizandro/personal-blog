@@ -20,6 +20,7 @@ hidemeta = true
 hideSummary = true
 showtoc = false
 hideFooter = true
+googleAnalytics = "G-CYYDDN9JBE"
 
 [params.homeInfoParams]
 Title = ""
