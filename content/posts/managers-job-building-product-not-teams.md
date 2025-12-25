@@ -67,7 +67,7 @@ Even so, find time to review code and write code when you can, regardless of sca
 
 Staying close to the work doesn't mean controlling everything. But the buck stops with the manager. The final decision is with the manager. This isn't about power. It's about alignment. You can't hold the manager accountable for technical decisions if the manager isn't the main decision maker. If the manager answers for the outcomes, the manager has to make the calls.
 
-The way managers avoid becoming bottlenecks is by raising the level of autonomy team members have. There's no such thing as "full autonomy." What exists are clear boundaries and clear levels of autonomy: a shared understanding of when to escalate decisions and when not to. The more alignment on direction and trust you build, the higher autonomy levels can rise.
+The way managers avoid becoming bottlenecks is by raising the level of autonomy team members have. There's no such thing as "full autonomy." What exists are clear boundaries and clear levels of autonomy: a shared understanding of when to escalate decisions and when not to. The more alignment on direction and trust you build, the higher autonomy levels can rise while still being accountable for the decisions.
 
 ## Critique the Work
 
