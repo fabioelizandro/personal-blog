@@ -38,8 +38,7 @@ Imagine you're building a product from the ground up, alone. Founder, developer,
 If you could deliver everything yourself, would you ever hire someone? The logical answer is no. You'd only hire when
 you couldn't deliver alone.
 
-So you hire a first person, then a second, and you finally have a team. Note that at no point does your job shift from "
-build the product" to "build the team."
+So you hire a first person, then a second, and you finally have a team. Note that at no point does your job shift from "build the product" to "build the team."
 The job stays the same: deliver the product. You're just doing it through people now because that's the only way to
 scale and achieve the goals you've set.
 
@@ -62,13 +61,13 @@ stuff doesn't disappear, but it becomes secondary, a natural byproduct of gettin
 Staying close means doing code reviews, joining architectural discussions, weighing in on product decisions. Ideally,
 even finding time to code. It keeps you in contact with reality and keeps your craft sharp.
 
-This gets harder at scale. You can't review every PR or join every architecture discussion. But the principle holds. What changes is what "the work" means at your level: less about code, more about major technical decisions, roadmapping, prioritization, delivery. Stay close to that.
+This gets harder at scale. You naturally step back from individual PRs and many discussions. But the principle holds. What changes is what "the work" means at your level: less about code, more about major technical decisions, roadmapping, prioritization, delivery. Stay close to that.
 
-But staying close doesn't mean controlling everything. The challenge is balance: setting direction without micromanaging every decision. Some decisions need you; others don't. The line depends on risk, how fundamental the decision is, and how reversible it is.
+Even so, find time to review code and write code when you can, regardless of scale. There's a lot to learn when you do that. You experience what every engineer on your team is experiencing. You see the friction points, the tooling gaps, the areas where the architecture makes things harder than they should be. That insight doesn't come from reports or metrics. It comes from doing the work.
 
-Accountability and authority have to live in the same place. It's not fair to hold someone
-accountable for outcomes they couldn't control, or to give someone control without holding them accountable. The manager
-sets the technical direction because the manager answers for the technical decisions.
+Staying close to the work doesn't mean controlling everything. But the buck stops with the manager. The final decision is with the manager. This isn't about power. It's about alignment. You can't hold the manager accountable for technical decisions if the manager isn't the main decision maker. If the manager answers for the outcomes, the manager has to make the calls.
+
+The way managers avoid becoming bottlenecks is by raising the level of autonomy team members have. There's no such thing as "full autonomy." What exists are clear boundaries and clear levels of autonomy: a shared understanding of when to escalate decisions and when not to. The more alignment on direction and trust you build, the higher autonomy levels can rise.
 
 ## Critique the Work
 
@@ -107,7 +106,7 @@ alongside that, great. But it's worth keeping these things somewhat separate.
 Staying close to the work is genuinely difficult. The role pulls you toward meetings, processes, and people bureaucracy.
 Without support from others, you will drown. I'm speaking from experience.
 
-All this is a result of deep reflection of my experience as manager, and I'm sure applying this framing in a real
+All this is a result of deep reflection on my experience as a manager, and I'm sure applying this framing in a real
 management role won't be easy. But here's what I would do if I were to manage again:
 
 **Get buy-in at all levels.** Before taking the role, I'd need execs, HR, and people at all levels aligned on this frame. Otherwise, bureaucracy wins. You get dragged into meetings, processes, people management. Technical work becomes the last thing you do.
