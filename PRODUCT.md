@@ -42,7 +42,7 @@ Real experience from someone who has been in the trenches since 2011: a Principa
 - Voice: first person, direct, warm, unpretentious. The site carries no introduction, tagline or pitch: nothing outside the About page introduces or sells the author.
 - The logo is a monogram of the author's initials: lowercase "fe" followed by a lavender full stop. It stands alone in the header and is also the favicon.
 - The full stop is the site's recurring element. It closes every page title, marks the current page and the current section, and stands in for bullets and separators.
-- The page is a white sheet for the content, lifted clearly off a very light lavender ground. The site is not flat: the sheet has real depth. Every other element is a tone of lavender, and the lavender is barely there: light, comfortable and zen, never strong or vibrant.
+- The page is a white sheet for the content, lifted clearly off a very light lavender ground. The site is not flat: the sheet has real depth. Every other element is a tone of lavender, and the lavender is barely there: light, comfortable and zen, never strong or vibrant. Code is the exception: its syntax colours are chosen for legibility first, with clearly different hues that stay deep, muted and in harmony with the rest.
 - The top of the ground carries one quiet motif: soft layered hills, like mist over a valley. The rest of the ground stays empty.
 - Clean and zen over decoration. The aesthetic comes from colour composition, typography and care in small details.
 - The author's taste draws on simplicity, craftsmanship, art, zen and Japanese culture, and classical design meeting modern, abstract elements. These inform judgement; they are not motifs to illustrate.

@@ -40,9 +40,15 @@
   --lav-300: #C9C3E4;
   --lav-200: #DDD9EE;
   --lav-100: #F3F1FA;
-  --code-string: #6B3D7E;
-  --code-number: #34478F;
-  --code-comment: #514A78;
+  /* Code is the one place other hues appear, so that each kind of token can
+     be told from the next at a glance: violet for the language's own words,
+     green for text, plum for values, blue for types, a quiet slate for
+     comments. All are deep and muted, and all keep 7:1 on the code panel. */
+  --code-bg: #F8F7FC;
+  --code-string: #1F5C40;
+  --code-number: #8A2B6A;
+  --code-type: #1D4F7A;
+  --code-comment: #4E4D63;
 
   --serif: "Literata", Georgia, "Times New Roman", serif;
   --sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
@@ -378,7 +384,7 @@ a { color: var(--accent); }
 
 .code, .prose > .highlight, .prose > pre {
   margin: 2rem 0;
-  background: var(--lav-100);
+  background: var(--code-bg);
   border: 1px solid var(--lav-200);
   border-radius: 6px;
 }
@@ -392,7 +398,7 @@ a { color: var(--accent); }
   scrollbar-color: var(--lav-300) transparent;
   background: none;
 }
-.prose > pre { background: var(--lav-100); }
+.prose > pre { background: var(--code-bg); }
 .prose pre code { padding: 0; background: none; font-size: inherit; border-radius: 0; }
 
 .code-head {
@@ -431,16 +437,17 @@ a { color: var(--accent); }
   .prose pre { tab-size: 2; font-size: 0.8125rem; }
 }
 
-/* Syntax, in tones of violet */
+/* Syntax. One hue per kind of token; weight marks the words that give the code its shape. */
 .chroma .c, .chroma .ch, .chroma .cm, .chroma .c1, .chroma .cs, .chroma .cp, .chroma .cpf { color: var(--code-comment); font-style: italic; }
-.chroma .k, .chroma .kc, .chroma .kd, .chroma .kn, .chroma .kp, .chroma .kr { color: var(--accent); font-weight: 700; }
-.chroma .kt, .chroma .nb, .chroma .nt { color: var(--accent); }
+.chroma .k, .chroma .kd, .chroma .kn, .chroma .kp, .chroma .kr { color: var(--accent); font-weight: 700; }
+.chroma .nt { color: var(--accent); font-weight: 600; }
+.chroma .kt, .chroma .nb, .chroma .nc, .chroma .nn { color: var(--code-type); }
 .chroma .s, .chroma .sa, .chroma .sb, .chroma .sc, .chroma .dl, .chroma .sd, .chroma .s2, .chroma .se, .chroma .sh, .chroma .si, .chroma .sx, .chroma .sr, .chroma .s1, .chroma .ss { color: var(--code-string); }
-.chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi, .chroma .il, .chroma .mo { color: var(--code-number); }
+.chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi, .chroma .il, .chroma .mo, .chroma .kc, .chroma .na { color: var(--code-number); }
+.chroma .kc { font-weight: 600; }
 .chroma .nf, .chroma .fm { font-weight: 700; }
-.chroma .na { color: var(--code-number); }
-.chroma .gd { color: var(--code-string); }
-.chroma .gi { color: var(--code-number); }
+.chroma .gd { color: var(--code-number); }
+.chroma .gi { color: var(--code-string); }
 .chroma .err { color: inherit; }
 
 /* ---------- Section list ---------- */

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-14T14:01:50.000Z",
+  "generatedAt": "2026-11-14T14:08:11.000Z",
   "title": "Design System: Fabio Elizandro",
   "extensions": {
     "colorMeta": {
@@ -141,47 +141,47 @@
       },
       "code-string": {
         "role": "tertiary",
-        "displayName": "Plum",
-        "canonical": "oklch(44.4% 0.114 315)",
+        "displayName": "Leaf Green",
+        "canonical": "oklch(42.7% 0.079 160)",
         "tonalRamp": [
-          "oklch(15% 0.068 315)",
-          "oklch(27% 0.114 315)",
-          "oklch(39% 0.114 315)",
-          "oklch(51% 0.114 315)",
-          "oklch(63% 0.114 315)",
-          "oklch(75% 0.114 315)",
-          "oklch(87% 0.068 315)",
-          "oklch(95% 0.034 315)"
+          "oklch(15% 0.047 160)",
+          "oklch(27% 0.079 160)",
+          "oklch(39% 0.079 160)",
+          "oklch(51% 0.079 160)",
+          "oklch(63% 0.079 160)",
+          "oklch(75% 0.079 160)",
+          "oklch(87% 0.047 160)",
+          "oklch(95% 0.024 160)"
         ]
       },
       "code-number": {
         "role": "tertiary",
-        "displayName": "Indigo",
-        "canonical": "oklch(42.2% 0.121 270)",
+        "displayName": "Plum",
+        "canonical": "oklch(45.3% 0.146 344)",
         "tonalRamp": [
-          "oklch(15% 0.073 270)",
-          "oklch(27% 0.121 270)",
-          "oklch(39% 0.121 270)",
-          "oklch(51% 0.121 270)",
-          "oklch(63% 0.121 270)",
-          "oklch(75% 0.121 270)",
-          "oklch(87% 0.073 270)",
-          "oklch(95% 0.036 270)"
+          "oklch(15% 0.088 344)",
+          "oklch(27% 0.146 344)",
+          "oklch(39% 0.146 344)",
+          "oklch(51% 0.146 344)",
+          "oklch(63% 0.146 344)",
+          "oklch(75% 0.146 344)",
+          "oklch(87% 0.088 344)",
+          "oklch(95% 0.044 344)"
         ]
       },
       "code-comment": {
         "role": "tertiary",
-        "displayName": "Slate Violet",
-        "canonical": "oklch(43.7% 0.075 290)",
+        "displayName": "Slate",
+        "canonical": "oklch(43.0% 0.036 287)",
         "tonalRamp": [
-          "oklch(15% 0.045 290)",
-          "oklch(27% 0.075 290)",
-          "oklch(39% 0.075 290)",
-          "oklch(51% 0.075 290)",
-          "oklch(63% 0.075 290)",
-          "oklch(75% 0.075 290)",
-          "oklch(87% 0.045 290)",
-          "oklch(95% 0.022 290)"
+          "oklch(15% 0.022 287)",
+          "oklch(27% 0.036 287)",
+          "oklch(39% 0.036 287)",
+          "oklch(51% 0.036 287)",
+          "oklch(63% 0.036 287)",
+          "oklch(75% 0.036 287)",
+          "oklch(87% 0.022 287)",
+          "oklch(95% 0.011 287)"
         ]
       },
       "hill-1": {
@@ -242,6 +242,36 @@
           "oklch(75% 0.024 299)",
           "oklch(87% 0.014 299)",
           "oklch(95% 0.007 299)"
+        ]
+      },
+      "code-type": {
+        "role": "tertiary",
+        "displayName": "Deep Blue",
+        "canonical": "oklch(41.6% 0.089 248)",
+        "tonalRamp": [
+          "oklch(15% 0.054 248)",
+          "oklch(27% 0.089 248)",
+          "oklch(39% 0.089 248)",
+          "oklch(51% 0.089 248)",
+          "oklch(63% 0.089 248)",
+          "oklch(75% 0.089 248)",
+          "oklch(87% 0.054 248)",
+          "oklch(95% 0.027 248)"
+        ]
+      },
+      "code-bg": {
+        "role": "neutral",
+        "displayName": "Code Panel",
+        "canonical": "oklch(97.8% 0.007 295)",
+        "tonalRamp": [
+          "oklch(15% 0.004 295)",
+          "oklch(27% 0.007 295)",
+          "oklch(39% 0.007 295)",
+          "oklch(51% 0.007 295)",
+          "oklch(63% 0.007 295)",
+          "oklch(75% 0.007 295)",
+          "oklch(87% 0.004 295)",
+          "oklch(95% 0.002 295)"
         ]
       }
     },
@@ -413,7 +443,7 @@
       "refersTo": "code-block",
       "description": "A pale lavender block with the language named above it and a text-only copy button.",
       "html": "<div class=\"ds-code\"><div class=\"ds-code-head\"><span>Go</span><button type=\"button\" class=\"ds-copy\">Copy</button></div><pre><span class=\"ds-k\">func</span> <span class=\"ds-nf\">applyDiscount</span>(percent <span class=\"ds-kt\">float64</span>) <span class=\"ds-kt\">error</span> {\n  <span class=\"ds-c\">// Business logic...</span>\n  <span class=\"ds-k\">if</span> percent &gt; <span class=\"ds-m\">100</span> {\n    <span class=\"ds-k\">return</span> errors.New(<span class=\"ds-s\">\"percentage must be at most 100\"</span>)\n  }\n  <span class=\"ds-k\">return</span> <span class=\"ds-k\">nil</span>\n}</pre></div>",
-      "css": ".ds-code { background: var(--lav-100); border: 1px solid var(--lav-200); border-radius: 6px; color: var(--ink); } .ds-code-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.25rem 0.375rem 0.25rem 1.25rem; border-bottom: 1px solid var(--lav-200); color: var(--ink-2); font: 500 0.8125rem/1 var(--sans); letter-spacing: 0.02em; } .ds-copy { min-height: 2rem; padding: 0 0.75rem; border: 0; border-radius: 4px; background: transparent; color: var(--accent); font: inherit; font-weight: 600; cursor: pointer; transition: background-color 0.2s; } .ds-copy:hover { background: var(--lav-200); } .ds-copy:active { background: var(--lav-300); } .ds-copy:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; } .ds-code pre { margin: 0; padding: 1.125rem 1.25rem; overflow-x: auto; font: 400 0.875rem/1.7 var(--mono); font-variant-ligatures: none; } .ds-k { color: var(--accent); font-weight: 700; } .ds-kt { color: var(--accent); } .ds-nf { font-weight: 700; } .ds-s { color: var(--code-string); } .ds-m { color: var(--code-number); } .ds-c { color: var(--code-comment); font-style: italic; }"
+      "css": ".ds-code { background: #F8F7FC; border: 1px solid var(--lav-200); border-radius: 6px; color: var(--ink); } .ds-code-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.25rem 0.375rem 0.25rem 1.25rem; border-bottom: 1px solid var(--lav-200); color: var(--ink-2); font: 500 0.8125rem/1 var(--sans); letter-spacing: 0.02em; } .ds-copy { min-height: 2rem; padding: 0 0.75rem; border: 0; border-radius: 4px; background: transparent; color: var(--accent); font: inherit; font-weight: 600; cursor: pointer; transition: background-color 0.2s; } .ds-copy:hover { background: var(--lav-200); } .ds-copy:active { background: var(--lav-300); } .ds-copy:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; } .ds-code pre { margin: 0; padding: 1.125rem 1.25rem; overflow-x: auto; font: 400 0.875rem/1.7 var(--mono); font-variant-ligatures: none; } .ds-k { color: var(--accent); font-weight: 700; } .ds-kt { color: var(--accent); } .ds-nf { font-weight: 700; } .ds-s { color: var(--code-string); } .ds-m { color: var(--code-number); } .ds-c { color: var(--code-comment); font-style: italic; }"
     },
     {
       "name": "Quotation",
