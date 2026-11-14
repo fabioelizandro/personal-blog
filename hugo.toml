@@ -4,29 +4,18 @@ title = 'Fabio Elizandro'
 theme = 'PaperMod'
 
 [params]
-defaultTheme = "light"
-disableThemeToggle = true
-ShowReadingTime = false
-ShowShareButtons = false
-ShowPostNavLinks = false
-ShowBreadCrumbs = false
-ShowCodeCopyButtons = true
-ShowWordCount = false
-ShowRssButtonInSectionTermList = false
-UseHugoToc = false
-disableScrollToTop = true
-comments = false
-hidemeta = true
-hideSummary = true
-showtoc = false
-hideFooter = true
+description = "Writing by Fabio Elizandro on software design, Go, testing practices and engineering management."
+github = "https://github.com/fabioelizandro"
+linkedin = "https://www.linkedin.com/in/fabioelizandro/"
 googleAnalytics = "G-CYYDDN9JBE"
 
-[params.homeInfoParams]
-Title = ""
-Content = ""
-
 [menu]
+[[menu.main]]
+identifier = "writing"
+name = "Writing"
+url = "/"
+weight = 10
+
 [[menu.main]]
 identifier = "about"
 name = "About"
@@ -38,4 +27,9 @@ weight = 20
 codeFences = true
 guessSyntax = true
 lineNos = false
-style = "github"
+noClasses = false
+
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 2
+ordered = false

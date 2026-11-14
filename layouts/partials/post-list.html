@@ -1,0 +1,10 @@
+<ul class="posts">
+    {{ range . }}
+    <li class="post-row">
+        <p class="post-row-date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time></p>
+        <h2><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>{{ if .Draft }}<span class="tag">Draft</span>{{ end }}</h2>
+        {{ with .Description }}<p class="post-row-desc">{{ . | truncate 210 | markdownify }}</p>{{ end }}
+        <p class="post-row-meta">{{ .ReadingTime }} min read</p>
+    </li>
+    {{ end }}
+</ul>

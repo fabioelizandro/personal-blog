@@ -1,5 +1,14 @@
+<meta name="theme-color" content="#F9F8FC">
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
+<link rel="preload" href="{{ "fonts/literata.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "fonts/hanken-grotesk.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+{{ range .AlternativeOutputFormats }}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ site.Title }}">
+{{ end }}
+{{ $css := resources.Get "css/site.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{ partial "templates/opengraph.html" . }}
 {{ partial "templates/schema_json.html" . }}
 {{ partial "templates/twitter_cards.html" . }}
 {{ partial "google_analytics.html" . }}
-<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">

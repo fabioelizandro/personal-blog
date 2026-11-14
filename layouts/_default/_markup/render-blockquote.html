@@ -1,0 +1,4 @@
+{{- /* A closing line that starts with an em dash is the attribution, and is set apart. */ -}}
+<blockquote>
+{{ .Text | replaceRE `<p>—\s*([^\n]*)</p>\s*$` `<p class="attribution">— $1</p>` | safeHTML }}
+</blockquote>

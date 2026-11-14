@@ -1,0 +1,26 @@
+{{- /*
+  Soft hills at the top of the ground, drawn at build time so they are there
+  before any script runs. site.js reads the same numbers from the data
+  attributes to move them (slide and sink with scroll, swell on a click), so
+  this list is the only place they are defined.
+  The drawing is 2880 wide and shown centred at its natural size.
+*/ -}}
+{{- $layers := slice
+  (dict "base" 150.0 "amp" 36.0 "l1" 260.0 "l2" 84.0 "p" 5.2 "tint" "#F4F2F9" "swell" 12 "slide" 0.1 "sink" 0.46)
+  (dict "base" 204.0 "amp" 44.0 "l1" 210.0 "l2" 70.0 "p" 0.4 "tint" "#EFECF7" "swell" 18 "slide" 0.2 "sink" 0.34)
+  (dict "base" 262.0 "amp" 40.0 "l1" 180.0 "l2" 96.0 "p" 2.1 "tint" "#E9E5F3" "swell" 26 "slide" 0.34 "sink" 0.22)
+  (dict "base" 318.0 "amp" 34.0 "l1" 240.0 "l2" 76.0 "p" 4.4 "tint" "#E3DEEF" "swell" 34 "slide" 0.52 "sink" 0.1)
+-}}
+<svg viewBox="0 0 2880 440" preserveAspectRatio="xMidYMin slice" focusable="false">
+{{- range $layers }}
+{{- $l := . }}
+{{- $d := "M0 440" }}
+{{- range seq 0 16 2880 }}
+{{- $long := math.Sin (add (div (float .) $l.l1) $l.p) }}
+{{- $short := math.Sin (add (div (float .) $l.l2) (mul $l.p 3.1)) }}
+{{- $y := sub $l.base (mul $l.amp (add (mul 0.6 $long) (mul 0.4 $short))) }}
+{{- $d = printf "%sL%d %.1f" $d . $y }}
+{{- end }}
+<path fill="{{ $l.tint }}" d="{{ $d }}L2880 440Z" data-base="{{ $l.base }}" data-amp="{{ $l.amp }}" data-l1="{{ $l.l1 }}" data-l2="{{ $l.l2 }}" data-p="{{ $l.p }}" data-swell="{{ $l.swell }}" data-slide="{{ $l.slide }}" data-sink="{{ $l.sink }}"/>
+{{- end }}
+</svg>
