@@ -11,9 +11,11 @@ colors:
   lav-300: "#C9C3E4"
   lav-200: "#DDD9EE"
   lav-100: "#F3F1FA"
-  code-string: "#6B3D7E"
-  code-number: "#34478F"
-  code-comment: "#514A78"
+  code-bg: "#F8F7FC"
+  code-string: "#1F5C40"
+  code-number: "#8A2B6A"
+  code-type: "#1D4F7A"
+  code-comment: "#4E4D63"
   hill-1: "#F4F2F9"
   hill-2: "#EFECF7"
   hill-3: "#E9E5F3"
@@ -123,7 +125,7 @@ components:
   prose-link:
     textColor: "{colors.accent}"
   code-block:
-    backgroundColor: "{colors.lav-100}"
+    backgroundColor: "{colors.code-bg}"
     textColor: "{colors.ink}"
     typography: "{typography.code}"
     rounded: "{rounded.md}"
@@ -208,9 +210,11 @@ A single hue family, violet, held between a near-black ink and a ground that is 
 - **Full-Stop Lavender** (`lav-500`, #8F85C2): the full stop wherever it appears, the underline beneath links in running text, and the chevron of the collapsed section list. It is a colour for marks and strokes, never for words.
 
 ### Tertiary
-- **Plum** (`code-string`, #6B3D7E): string literals in code, and removed lines in a diff.
-- **Indigo** (`code-number`, #34478F): numbers and attribute names in code, and added lines in a diff.
-- **Slate Violet** (`code-comment`, #514A78): code comments, set in italic.
+- **Code Panel** (`code-bg`, #F8F7FC): the ground of a code block, a shade lighter than Pale Lavender so the text stands off it.
+- **Leaf Green** (`code-string`, #1F5C40): string literals in code, and added lines in a diff.
+- **Plum** (`code-number`, #8A2B6A): numbers, constants such as `nil` and `true`, and attribute names in code; removed lines in a diff.
+- **Deep Blue** (`code-type`, #1D4F7A): types and built-ins in code.
+- **Slate** (`code-comment`, #4E4D63): code comments, set in italic.
 
 ### Neutral
 - **Violet Ink** (`ink`, #231F38): titles, body text, code, and the dark pill of the whisper note and the skip link.
@@ -223,7 +227,7 @@ A single hue family, violet, held between a near-black ink and a ground that is 
 - **Hill tints** (`hill-1` #F4F2F9, `hill-2` #EFECF7, `hill-3` #E9E5F3, `hill-4` #E3DEEF): the four layers of hills, palest at the back and deepest at the front. They are used for the hills only.
 
 ### Named Rules
-**The Violet Only Rule.** Every colour is white or a tone of violet, with hue held between indigo and plum. No second hue enters for emphasis, status or syntax; difference is made with lightness and weight.
+**The Violet Only Rule.** Every colour is white or a tone of violet, with hue held between indigo and plum. No second hue enters for emphasis or status; difference is made with lightness and weight. Code is the one exception: inside a code block each kind of token has its own hue (violet, green, plum, blue, slate) so that it can be told from the next at a glance. Those hues are deep and muted, never bright, and they stay inside code blocks.
 
 **The Barely There Rule.** Lavender surfaces stay very light: the ground, the pale fills and the hills all sit above 90% lightness with very little chroma. A lavender that reads as strong or vibrant is wrong, however well it matches.
 
@@ -324,7 +328,7 @@ Components are quiet and typographic: most are text with a precise hover, and th
 ### Code
 - **Block:** Pale Lavender fill, hairline border, 6px corners, 1.125rem by 1.25rem of padding, horizontal scroll for long lines. A head strip above the code names the language at the left in Small label type and holds the copy button at the right, divided from the code by a hairline.
 - **Copy button:** text only, Deep Lavender at weight 600, 2rem tall (2.75rem on touch screens), 4px corners. Hover fills it with Hairline Lavender, press with Pressed Lavender. Its label changes to "Copied" for a moment.
-- **Syntax:** keywords in bold Deep Lavender, types and built-ins in Deep Lavender, strings in Plum, numbers in Indigo, comments in italic Slate Violet, function names in bold ink.
+- **Syntax:** one hue per kind of token. Keywords in bold Deep Lavender, markup tags in Deep Lavender at weight 600, strings in Leaf Green, numbers, constants and attribute names in Plum, types and built-ins in Deep Blue, comments in italic Slate, function names in bold ink, everything else in ink. All of them keep 7:1 or better on the Code Panel.
 - **Inline:** Pale Lavender fill, 4px corners, 0.86em.
 
 ### Quotation
