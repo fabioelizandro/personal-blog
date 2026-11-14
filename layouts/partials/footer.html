@@ -1,0 +1,8 @@
+<footer class="site-footer">
+    <p>© {{ now.Year }} {{ site.Title }}</p>
+    <nav aria-label="Elsewhere">
+        {{ with site.Params.github }}<a href="{{ . }}" rel="me noopener">GitHub</a>{{ end }}
+        {{ with site.Params.linkedin }}<a href="{{ . }}" rel="me noopener">LinkedIn</a>{{ end }}
+        {{ with site.Home.OutputFormats.Get "rss" }}<a href="{{ .RelPermalink }}">RSS</a>{{ end }}
+    </nav>
+</footer>

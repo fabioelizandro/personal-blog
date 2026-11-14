@@ -1,22 +1,41 @@
 {{ define "main" }}
-<article class="post-single">
+{{ $isPost := eq .Type "posts" }}
+{{ $hasSections := and $isPost (ge (len (findRE `<h2` .Content)) 3) }}
+{{ $sections := .TableOfContents | replaceRE ` id="TableOfContents"` "" | safeHTML }}
+<article class="sheet">
     <header class="post-header">
-        <h1 class="post-title">{{ .Title }}</h1>
-        {{ if not .Params.hidemeta }}
-        <div class="post-meta">
-            <time>{{ .Date.Format "January 2, 2006" }}</time>
-            {{ if .Params.tags }}
-            <span class="post-tags">
-                {{ range .Params.tags }}
-                <span class="tag">{{ . }}</span>
-                {{ end }}
-            </span>
-            {{ end }}
-        </div>
+        <h1>{{ .Title | markdownify }}{{ if not (findRE `[.?!…]$` .Title) }}<span class="stop" aria-hidden="true">.</span>{{ end }}</h1>
+        {{ if $isPost }}
+        <p class="post-meta"><span class="meta-row"><span>{{ site.Title }}</span><span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time></span><span>{{ .ReadingTime }} min read{{ if .Draft }}<span class="tag">Draft</span>{{ end }}</span></span></p>
         {{ end }}
     </header>
-    <div class="post-content">
+    {{ if $hasSections }}
+    <details class="toc-inline">
+        <summary>In this post</summary>
+        {{ $sections }}
+    </details>
+    {{ end }}
+    <div class="prose">
         {{ .Content }}
     </div>
+    {{ if $isPost }}
+    <footer class="post-footer">
+        <div class="post-end">{{ partial "mark.html" (dict) }}</div>
+        {{ $older := "" }}{{ $newer := "" }}
+        {{ range (slice .PrevInSection .NextInSection) }}{{ with . }}{{ if lt .Date $.Date }}{{ $older = . }}{{ else }}{{ $newer = . }}{{ end }}{{ end }}{{ end }}
+        {{ if or $older $newer }}
+        <nav class="post-nav" aria-label="More writing">
+            {{ with $newer }}<a href="{{ .RelPermalink }}"><small>Newer</small><span>{{ .Title | markdownify }}</span></a>{{ end }}
+            {{ with $older }}<a href="{{ .RelPermalink }}"><small>Older</small><span>{{ .Title | markdownify }}</span></a>{{ end }}
+        </nav>
+        {{ end }}
+    </footer>
+    {{ end }}
 </article>
+{{ if $hasSections }}
+<aside class="toc-rail" aria-label="In this post">
+    <p class="toc-title">In this post</p>
+    {{ $sections }}
+</aside>
+{{ end }}
 {{ end }}

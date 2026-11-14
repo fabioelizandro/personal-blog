@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ site.Language.LanguageCode | default "en" }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify }}{{ end }}">
-    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+    <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsHome }}{{ site.Params.description }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}{{ end }}">
     <link rel="canonical" href="{{ .Permalink }}">
     {{ partial "head.html" . }}
-    {{ range .Site.Params.customCSS }}
-    <link rel="stylesheet" href="{{ . | relURL }}">
-    {{ end }}
 </head>
 <body>
+    <a class="skip" href="#content">Skip to content</a>
     {{ partial "header.html" . }}
-    <main class="main">
+    <main id="content" class="page">
         {{ block "main" . }}{{ end }}
     </main>
-    <footer class="footer">
-        <div>© {{ now.Year }} {{ .Site.Title }}</div>
-    </footer>
+    {{ partial "footer.html" . }}
+    <div class="motif" aria-hidden="true">{{ partial "hills.html" . }}</div>
+    <p class="whisper" role="status" aria-live="polite"></p>
+    {{ $js := resources.Get "js/site.js" | minify | fingerprint }}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
 </body>
 </html>
