@@ -2,7 +2,7 @@
 name: Fabio Elizandro
 description: A white sheet of writing lifted off a barely-lavender ground, with personality kept in a full stop.
 colors:
-  ground: "#F9F8FC"
+  ground: "#FCFCFE"
   sheet: "#FFFFFF"
   ink: "#231F38"
   ink-2: "#575080"
@@ -16,10 +16,10 @@ colors:
   code-number: "#8A2B6A"
   code-type: "#1D4F7A"
   code-comment: "#4E4D63"
-  hill-1: "#F4F2F9"
-  hill-2: "#EFECF7"
-  hill-3: "#E9E5F3"
-  hill-4: "#E3DEEF"
+  hill-1: "#F9F8FC"
+  hill-2: "#F6F4FA"
+  hill-3: "#F2EFF8"
+  hill-4: "#EEEAF5"
 typography:
   display:
     fontFamily: "Literata, Georgia, 'Times New Roman', serif"
@@ -220,11 +220,11 @@ A single hue family, violet, held between a near-black ink and a ground that is 
 - **Violet Ink** (`ink`, #231F38): titles, body text, code, and the dark pill of the whisper note and the skip link.
 - **Soft Ink** (`ink-2`, #575080): bylines, dates, reading times, navigation at rest, the footer, the labels above code blocks and beside post links.
 - **Sheet White** (`sheet`, #FFFFFF): the sheet and the section card. Nothing else is pure white.
-- **Mist Ground** (`ground`, #F9F8FC): the page behind the sheet, and the browser theme colour.
+- **Mist Ground** (`ground`, #FCFCFE): the page behind the sheet, and the browser theme colour.
 - **Pale Lavender** (`lav-100`, #F3F1FA): the fill behind code blocks, inline code, quotations and the tag, and the hover fill in the section card.
 - **Hairline Lavender** (`lav-200`, #DDD9EE): every 1px rule and border, and the copy button's hover fill.
 - **Pressed Lavender** (`lav-300`, #C9C3E4): the copy button while pressed, the underline that appears under a post title on hover, and the scrollbar thumb.
-- **Hill tints** (`hill-1` #F4F2F9, `hill-2` #EFECF7, `hill-3` #E9E5F3, `hill-4` #E3DEEF): the four layers of hills, palest at the back and deepest at the front. They are used for the hills only.
+- **Hill tints** (`hill-1` #F9F8FC, `hill-2` #F6F4FA, `hill-3` #F2EFF8, `hill-4` #EEEAF5): the four layers of hills, palest at the back and deepest at the front. They are used for the hills only.
 
 ### Named Rules
 **The Violet Only Rule.** Every colour is white or a tone of violet, with hue held between indigo and plum. No second hue enters for emphasis or status; difference is made with lightness and weight. Code is the one exception: inside a code block each kind of token has its own hue (violet, green, plum, blue, slate) so that it can be told from the next at a glance. Those hues are deep and muted, never bright, and they stay inside code blocks.
