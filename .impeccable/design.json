@@ -1,22 +1,22 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-14T14:08:11.000Z",
+  "generatedAt": "2026-11-14T22:49:01.000Z",
   "title": "Design System: Fabio Elizandro",
   "extensions": {
     "colorMeta": {
       "ground": {
         "role": "neutral",
         "displayName": "Mist Ground",
-        "canonical": "oklch(98.1% 0.005 298)",
+        "canonical": "oklch(99.2% 0.003 286)",
         "tonalRamp": [
-          "oklch(15% 0.003 298)",
-          "oklch(27% 0.005 298)",
-          "oklch(39% 0.005 298)",
-          "oklch(51% 0.005 298)",
-          "oklch(63% 0.005 298)",
-          "oklch(75% 0.005 298)",
-          "oklch(87% 0.003 298)",
-          "oklch(95% 0.002 298)"
+          "oklch(15% 0.002 286)",
+          "oklch(27% 0.003 286)",
+          "oklch(39% 0.003 286)",
+          "oklch(51% 0.003 286)",
+          "oklch(63% 0.003 286)",
+          "oklch(75% 0.003 286)",
+          "oklch(87% 0.002 286)",
+          "oklch(95% 0.001 286)"
         ]
       },
       "sheet": {
@@ -76,7 +76,7 @@
           "#C9C3E4",
           "#DDD9EE",
           "#F3F1FA",
-          "#F9F8FC"
+          "#FCFCFE"
         ]
       },
       "lav-500": {
@@ -91,7 +91,7 @@
           "#C9C3E4",
           "#DDD9EE",
           "#F3F1FA",
-          "#F9F8FC"
+          "#FCFCFE"
         ]
       },
       "lav-300": {
@@ -106,7 +106,7 @@
           "#C9C3E4",
           "#DDD9EE",
           "#F3F1FA",
-          "#F9F8FC"
+          "#FCFCFE"
         ]
       },
       "lav-200": {
@@ -121,7 +121,7 @@
           "#C9C3E4",
           "#DDD9EE",
           "#F3F1FA",
-          "#F9F8FC"
+          "#FCFCFE"
         ]
       },
       "lav-100": {
@@ -136,7 +136,7 @@
           "#C9C3E4",
           "#DDD9EE",
           "#F3F1FA",
-          "#F9F8FC"
+          "#FCFCFE"
         ]
       },
       "code-string": {
@@ -187,61 +187,61 @@
       "hill-1": {
         "role": "neutral",
         "displayName": "Hill, farthest",
-        "canonical": "oklch(96.5% 0.010 299)",
+        "canonical": "oklch(98.1% 0.005 298)",
         "tonalRamp": [
-          "oklch(15% 0.006 299)",
-          "oklch(27% 0.010 299)",
-          "oklch(39% 0.010 299)",
-          "oklch(51% 0.010 299)",
-          "oklch(63% 0.010 299)",
-          "oklch(75% 0.010 299)",
-          "oklch(87% 0.006 299)",
-          "oklch(95% 0.003 299)"
+          "oklch(15% 0.003 298)",
+          "oklch(27% 0.005 298)",
+          "oklch(39% 0.005 298)",
+          "oklch(51% 0.005 298)",
+          "oklch(63% 0.005 298)",
+          "oklch(75% 0.005 298)",
+          "oklch(87% 0.003 298)",
+          "oklch(95% 0.002 298)"
         ]
       },
       "hill-2": {
         "role": "neutral",
         "displayName": "Hill, far",
-        "canonical": "oklch(94.9% 0.015 299)",
+        "canonical": "oklch(97.0% 0.008 301)",
         "tonalRamp": [
-          "oklch(15% 0.009 299)",
-          "oklch(27% 0.015 299)",
-          "oklch(39% 0.015 299)",
-          "oklch(51% 0.015 299)",
-          "oklch(63% 0.015 299)",
-          "oklch(75% 0.015 299)",
-          "oklch(87% 0.009 299)",
-          "oklch(95% 0.004 299)"
+          "oklch(15% 0.005 301)",
+          "oklch(27% 0.008 301)",
+          "oklch(39% 0.008 301)",
+          "oklch(51% 0.008 301)",
+          "oklch(63% 0.008 301)",
+          "oklch(75% 0.008 301)",
+          "oklch(87% 0.005 301)",
+          "oklch(95% 0.002 301)"
         ]
       },
       "hill-3": {
         "role": "neutral",
         "displayName": "Hill, near",
-        "canonical": "oklch(92.9% 0.019 299)",
+        "canonical": "oklch(95.7% 0.012 301)",
         "tonalRamp": [
-          "oklch(15% 0.011 299)",
-          "oklch(27% 0.019 299)",
-          "oklch(39% 0.019 299)",
-          "oklch(51% 0.019 299)",
-          "oklch(63% 0.019 299)",
-          "oklch(75% 0.019 299)",
-          "oklch(87% 0.011 299)",
-          "oklch(95% 0.006 299)"
+          "oklch(15% 0.007 301)",
+          "oklch(27% 0.012 301)",
+          "oklch(39% 0.012 301)",
+          "oklch(51% 0.012 301)",
+          "oklch(63% 0.012 301)",
+          "oklch(75% 0.012 301)",
+          "oklch(87% 0.007 301)",
+          "oklch(95% 0.004 301)"
         ]
       },
       "hill-4": {
         "role": "neutral",
         "displayName": "Hill, nearest",
-        "canonical": "oklch(91.0% 0.024 299)",
+        "canonical": "oklch(94.3% 0.015 303)",
         "tonalRamp": [
-          "oklch(15% 0.014 299)",
-          "oklch(27% 0.024 299)",
-          "oklch(39% 0.024 299)",
-          "oklch(51% 0.024 299)",
-          "oklch(63% 0.024 299)",
-          "oklch(75% 0.024 299)",
-          "oklch(87% 0.014 299)",
-          "oklch(95% 0.007 299)"
+          "oklch(15% 0.009 303)",
+          "oklch(27% 0.015 303)",
+          "oklch(39% 0.015 303)",
+          "oklch(51% 0.015 303)",
+          "oklch(63% 0.015 303)",
+          "oklch(75% 0.015 303)",
+          "oklch(87% 0.009 303)",
+          "oklch(95% 0.005 303)"
         ]
       },
       "code-type": {
