@@ -20,20 +20,22 @@ git submodule update --init --recursive
 
 ## Architecture Overview
 
-This is a Hugo static site blog using the PaperMod theme. The site is hosted on GitHub Pages with custom domain `elizandro.com.br`.
+This is a Hugo static site blog, hosted on GitHub Pages with the custom domain `elizandro.com.br`. The site owns its layouts, styles and scripts; the PaperMod theme submodule is kept only for its Open Graph, Twitter card and schema partials.
 
 ### Key Structure
 - **Content**: All posts are in `content/posts/` as Markdown files with frontmatter
-- **Theme**: Uses PaperMod theme as git submodule in `themes/PaperMod/`
-- **Layouts**: Custom layout overrides in `layouts/` (index.html, baseof.html, partials)
-- **Static files**: CSS and other assets in `static/`
-- **Configuration**: Hugo settings in `hugo.toml`
+- **Layouts**: `layouts/` holds every template: `_default/baseof.html`, `_default/single.html` (posts and About), `_default/list.html`, `index.html` (home), `404.html`, and partials (`header`, `footer`, `head`, `mark`, `post-list`)
+- **Styles and scripts**: `assets/css/site.css` and `assets/js/site.js`, minified and fingerprinted by Hugo Pipes in `head.html` and `baseof.html`. There is no other build step
+- **Static files**: self-hosted fonts in `static/fonts/`, the favicon and touch icon, and post images in `static/images/`
+- **Theme**: PaperMod as a git submodule in `themes/PaperMod/`
+- **Configuration**: Hugo settings in `hugo.toml` (site description, home intro, social links, menu, syntax highlighting with CSS classes)
 
-### Site Configuration
-- Light theme only (theme toggle disabled)
-- Minimalist design with most UI elements hidden (reading time, share buttons, ToC, etc.)
-- Custom domain setup with GitHub Pages
-- Posts use frontmatter with title, date, draft status, and description
+### Design
+- `PRODUCT.md` records who the site is for and what it must be. `DESIGN.md` records the visual system: read both before changing anything visual
+- One theme: a white sheet on a light lavender ground, tones of violet only, no dark mode
+- The monogram (`layouts/partials/mark.html`, lowercase "fe" and a lavender full stop) is also the favicon; if the drawing changes, update `static/favicon.svg` and `static/apple-touch-icon.png` with it
+- Body text and code must keep a contrast of 7:1 or better
+- Design work uses the Impeccable plugin (`/impeccable:impeccable`); its project config and briefs live in `.impeccable/`
 
 ### Content Workflow
 - Posts are created in `content/posts/` with descriptive filenames

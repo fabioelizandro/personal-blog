@@ -1,0 +1,551 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-14T14:01:50.000Z",
+  "title": "Design System: Fabio Elizandro",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Mist Ground",
+        "canonical": "oklch(98.1% 0.005 298)",
+        "tonalRamp": [
+          "oklch(15% 0.003 298)",
+          "oklch(27% 0.005 298)",
+          "oklch(39% 0.005 298)",
+          "oklch(51% 0.005 298)",
+          "oklch(63% 0.005 298)",
+          "oklch(75% 0.005 298)",
+          "oklch(87% 0.003 298)",
+          "oklch(95% 0.002 298)"
+        ]
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Sheet White",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": [
+          "oklch(15% 0.000 0)",
+          "oklch(27% 0.000 0)",
+          "oklch(39% 0.000 0)",
+          "oklch(51% 0.000 0)",
+          "oklch(63% 0.000 0)",
+          "oklch(75% 0.000 0)",
+          "oklch(87% 0.000 0)",
+          "oklch(95% 0.000 0)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Violet Ink",
+        "canonical": "oklch(25.7% 0.046 290)",
+        "tonalRamp": [
+          "oklch(15% 0.028 290)",
+          "oklch(27% 0.046 290)",
+          "oklch(39% 0.046 290)",
+          "oklch(51% 0.046 290)",
+          "oklch(63% 0.046 290)",
+          "oklch(75% 0.046 290)",
+          "oklch(87% 0.028 290)",
+          "oklch(95% 0.014 290)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "oklch(45.9% 0.077 290)",
+        "tonalRamp": [
+          "oklch(15% 0.046 290)",
+          "oklch(27% 0.077 290)",
+          "oklch(39% 0.077 290)",
+          "oklch(51% 0.077 290)",
+          "oklch(63% 0.077 290)",
+          "oklch(75% 0.077 290)",
+          "oklch(87% 0.046 290)",
+          "oklch(95% 0.023 290)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Deep Lavender",
+        "canonical": "oklch(41.3% 0.134 285)",
+        "tonalRamp": [
+          "#231F38",
+          "#473B8F",
+          "#575080",
+          "#8F85C2",
+          "#C9C3E4",
+          "#DDD9EE",
+          "#F3F1FA",
+          "#F9F8FC"
+        ]
+      },
+      "lav-500": {
+        "role": "primary",
+        "displayName": "Full-Stop Lavender",
+        "canonical": "oklch(64.9% 0.090 291)",
+        "tonalRamp": [
+          "#231F38",
+          "#473B8F",
+          "#575080",
+          "#8F85C2",
+          "#C9C3E4",
+          "#DDD9EE",
+          "#F3F1FA",
+          "#F9F8FC"
+        ]
+      },
+      "lav-300": {
+        "role": "neutral",
+        "displayName": "Pressed Lavender",
+        "canonical": "oklch(83.3% 0.046 294)",
+        "tonalRamp": [
+          "#231F38",
+          "#473B8F",
+          "#575080",
+          "#8F85C2",
+          "#C9C3E4",
+          "#DDD9EE",
+          "#F3F1FA",
+          "#F9F8FC"
+        ]
+      },
+      "lav-200": {
+        "role": "neutral",
+        "displayName": "Hairline Lavender",
+        "canonical": "oklch(89.5% 0.029 295)",
+        "tonalRamp": [
+          "#231F38",
+          "#473B8F",
+          "#575080",
+          "#8F85C2",
+          "#C9C3E4",
+          "#DDD9EE",
+          "#F3F1FA",
+          "#F9F8FC"
+        ]
+      },
+      "lav-100": {
+        "role": "neutral",
+        "displayName": "Pale Lavender",
+        "canonical": "oklch(96.2% 0.012 296)",
+        "tonalRamp": [
+          "#231F38",
+          "#473B8F",
+          "#575080",
+          "#8F85C2",
+          "#C9C3E4",
+          "#DDD9EE",
+          "#F3F1FA",
+          "#F9F8FC"
+        ]
+      },
+      "code-string": {
+        "role": "tertiary",
+        "displayName": "Plum",
+        "canonical": "oklch(44.4% 0.114 315)",
+        "tonalRamp": [
+          "oklch(15% 0.068 315)",
+          "oklch(27% 0.114 315)",
+          "oklch(39% 0.114 315)",
+          "oklch(51% 0.114 315)",
+          "oklch(63% 0.114 315)",
+          "oklch(75% 0.114 315)",
+          "oklch(87% 0.068 315)",
+          "oklch(95% 0.034 315)"
+        ]
+      },
+      "code-number": {
+        "role": "tertiary",
+        "displayName": "Indigo",
+        "canonical": "oklch(42.2% 0.121 270)",
+        "tonalRamp": [
+          "oklch(15% 0.073 270)",
+          "oklch(27% 0.121 270)",
+          "oklch(39% 0.121 270)",
+          "oklch(51% 0.121 270)",
+          "oklch(63% 0.121 270)",
+          "oklch(75% 0.121 270)",
+          "oklch(87% 0.073 270)",
+          "oklch(95% 0.036 270)"
+        ]
+      },
+      "code-comment": {
+        "role": "tertiary",
+        "displayName": "Slate Violet",
+        "canonical": "oklch(43.7% 0.075 290)",
+        "tonalRamp": [
+          "oklch(15% 0.045 290)",
+          "oklch(27% 0.075 290)",
+          "oklch(39% 0.075 290)",
+          "oklch(51% 0.075 290)",
+          "oklch(63% 0.075 290)",
+          "oklch(75% 0.075 290)",
+          "oklch(87% 0.045 290)",
+          "oklch(95% 0.022 290)"
+        ]
+      },
+      "hill-1": {
+        "role": "neutral",
+        "displayName": "Hill, farthest",
+        "canonical": "oklch(96.5% 0.010 299)",
+        "tonalRamp": [
+          "oklch(15% 0.006 299)",
+          "oklch(27% 0.010 299)",
+          "oklch(39% 0.010 299)",
+          "oklch(51% 0.010 299)",
+          "oklch(63% 0.010 299)",
+          "oklch(75% 0.010 299)",
+          "oklch(87% 0.006 299)",
+          "oklch(95% 0.003 299)"
+        ]
+      },
+      "hill-2": {
+        "role": "neutral",
+        "displayName": "Hill, far",
+        "canonical": "oklch(94.9% 0.015 299)",
+        "tonalRamp": [
+          "oklch(15% 0.009 299)",
+          "oklch(27% 0.015 299)",
+          "oklch(39% 0.015 299)",
+          "oklch(51% 0.015 299)",
+          "oklch(63% 0.015 299)",
+          "oklch(75% 0.015 299)",
+          "oklch(87% 0.009 299)",
+          "oklch(95% 0.004 299)"
+        ]
+      },
+      "hill-3": {
+        "role": "neutral",
+        "displayName": "Hill, near",
+        "canonical": "oklch(92.9% 0.019 299)",
+        "tonalRamp": [
+          "oklch(15% 0.011 299)",
+          "oklch(27% 0.019 299)",
+          "oklch(39% 0.019 299)",
+          "oklch(51% 0.019 299)",
+          "oklch(63% 0.019 299)",
+          "oklch(75% 0.019 299)",
+          "oklch(87% 0.011 299)",
+          "oklch(95% 0.006 299)"
+        ]
+      },
+      "hill-4": {
+        "role": "neutral",
+        "displayName": "Hill, nearest",
+        "canonical": "oklch(91.0% 0.024 299)",
+        "tonalRamp": [
+          "oklch(15% 0.014 299)",
+          "oklch(27% 0.024 299)",
+          "oklch(39% 0.024 299)",
+          "oklch(51% 0.024 299)",
+          "oklch(63% 0.024 299)",
+          "oklch(75% 0.024 299)",
+          "oklch(87% 0.014 299)",
+          "oklch(95% 0.007 299)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The one title on a page, closed by a full stop."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings inside a post."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Sub-headings inside a section."
+      },
+      "list-title": {
+        "displayName": "List title",
+        "purpose": "A post's title in the list of posts."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text on the sheet; italic for quotations."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Navigation, section card entries, attributions, tables."
+      },
+      "label-small": {
+        "displayName": "Small label",
+        "purpose": "Section card heading, code language and copy button, Newer and Older."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Bylines, dates, reading times, footer, the whisper note. Tabular figures."
+      },
+      "code": {
+        "displayName": "Code",
+        "purpose": "Code blocks, ligatures off; 0.8125rem at phone widths."
+      }
+    },
+    "shadows": [
+      {
+        "name": "sheet",
+        "value": "0 0 0 1px rgba(71, 59, 143, 0.07), 0 2px 4px rgba(53, 44, 110, 0.05), 0 12px 24px -8px rgba(53, 44, 110, 0.12), 0 40px 80px -28px rgba(53, 44, 110, 0.3)",
+        "purpose": "The sheet: a hairline ring, a contact shadow, a mid shadow and a long soft cast."
+      },
+      {
+        "name": "card",
+        "value": "0 0 0 1px rgba(71, 59, 143, 0.07), 0 2px 4px rgba(53, 44, 110, 0.04), 0 14px 28px -14px rgba(53, 44, 110, 0.22)",
+        "purpose": "The section card: the same recipe, closer to the ground."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Easing for every eased state change: the navigation full stop, the whisper, the zen fade."
+      },
+      {
+        "name": "duration-state",
+        "value": "0.2s",
+        "purpose": "Colour, underline and fill changes on hover and press."
+      },
+      {
+        "name": "duration-mark",
+        "value": "0.3s",
+        "purpose": "The navigation full stop scaling in; the whisper fading in."
+      },
+      {
+        "name": "duration-recede",
+        "value": "0.4s",
+        "purpose": "Header, footer and section card fading for zen."
+      },
+      {
+        "name": "duration-ground",
+        "value": "0.6s",
+        "purpose": "Ground colour, hills and sheet shadow changing for zen."
+      },
+      {
+        "name": "stop-bob",
+        "value": "translateY(0) to translateY(-5px), 0.9s ease-in-out infinite alternate",
+        "purpose": "The monogram full stop bobbing while a fine pointer is within about 56px."
+      },
+      {
+        "name": "stop-physics",
+        "value": "gravity 1800px/s², bounce 0.62, paddle radius 20px, top speed 2600px/s, home flight 760ms",
+        "purpose": "The thrown full stop: falls, bounces off the sheet, the section card and the window edges, and flies home."
+      },
+      {
+        "name": "hills-scroll",
+        "value": "slide 0.1 / 0.2 / 0.34 / 0.52 and sink 0.46 / 0.34 / 0.22 / 0.1 of scroll distance, far to near, over the first 440px",
+        "purpose": "The hill layers sliding past one another as the top of the page scrolls away."
+      },
+      {
+        "name": "hills-swell",
+        "value": "2.2s, heights 12 / 18 / 26 / 34 far to near, 0.09s delay per layer from the nearest",
+        "purpose": "The swell raised by a click on the hills; it parts in two and travels outwards."
+      },
+      {
+        "name": "whisper-hold",
+        "value": "3.2s",
+        "purpose": "How long the whisper note stays."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Removes all animation and transitions; the hills stay still and the full stop cannot be thrown."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone-code",
+        "value": "40rem"
+      },
+      {
+        "name": "list-columns",
+        "value": "44rem"
+      },
+      {
+        "name": "code-outdent",
+        "value": "48rem"
+      },
+      {
+        "name": "card-paired",
+        "value": "70rem"
+      },
+      {
+        "name": "card-in-margin",
+        "value": "84rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Monogram",
+      "kind": "custom",
+      "description": "The \"fe.\" mark: the home link in the header and the close of every post. Hover it and the full stop bobs.",
+      "html": "<a class=\"ds-brand\" href=\"#\" aria-label=\"Home\"><svg class=\"ds-mark\" viewBox=\"0 0 48 48\" aria-hidden=\"true\"><g class=\"ds-mark-fe\" transform=\"translate(3.4 37.4)\"><path d=\"M1.31 0V-1.43L3.06 -1.68Q3.73 -1.77 3.93 -2.12Q4.13 -2.47 4.13 -3.45V-16.03H1.47V-17.48L4.14 -17.8V-19.05Q4.14 -20.94 4.57 -22.47Q5 -24.01 5.85 -25.1Q6.7 -26.2 7.98 -26.78Q9.27 -27.37 10.94 -27.37Q12.59 -27.37 13.75 -26.92Q14.91 -26.46 15.52 -25.66Q16.14 -24.87 16.14 -23.82Q16.14 -22.87 15.56 -22.21Q14.99 -21.55 13.94 -21.55Q13.01 -21.55 12.48 -21.94Q11.95 -22.33 11.95 -23Q11.95 -23.44 12.16 -23.92Q12.38 -24.4 12.97 -25.35Q12.6 -25.56 12.06 -25.7Q11.52 -25.84 10.96 -25.84Q9.96 -25.84 9.33 -25.37Q8.69 -24.89 8.41 -23.9Q8.12 -22.91 8.12 -21.31V-17.87H13.17V-16.03H8.12V-3.31Q8.12 -2.48 8.35 -2.15Q8.57 -1.81 9.27 -1.74L11.99 -1.43V0Z\"/><path d=\"M22.67 0.49Q20.06 0.49 18.16 -0.61Q16.27 -1.7 15.24 -3.75Q14.21 -5.8 14.21 -8.61Q14.21 -11.67 15.33 -13.85Q16.44 -16.02 18.44 -17.19Q20.43 -18.36 23.05 -18.36Q25.09 -18.36 26.61 -17.58Q28.13 -16.81 28.96 -15.37Q29.8 -13.93 29.8 -11.99Q29.8 -11.3 29.72 -10.56Q29.63 -9.81 29.46 -9.04H18.45Q18.47 -6.88 19.13 -5.4Q19.79 -3.93 21 -3.19Q22.2 -2.45 23.81 -2.45Q25.25 -2.45 26.53 -2.96Q27.81 -3.47 28.98 -4.56L30.01 -3.51Q28.73 -1.58 26.83 -0.55Q24.93 0.49 22.67 0.49ZM18.45 -10.71H25.75Q25.82 -11.08 25.84 -11.5Q25.86 -11.92 25.86 -12.38Q25.86 -14.65 25.07 -15.7Q24.29 -16.76 22.71 -16.76Q21.46 -16.76 20.56 -16.11Q19.67 -15.46 19.14 -14.12Q18.6 -12.78 18.45 -10.71Z\"/></g><circle class=\"ds-mark-dot\" cx=\"39.9\" cy=\"34\" r=\"3.4\"/></svg></a>",
+      "css": ".ds-brand { display: inline-flex; align-items: center; min-height: 2.75rem; } .ds-mark { display: block; width: 2.875rem; height: 2.875rem; overflow: visible; } .ds-mark-fe { fill: var(--accent); } .ds-mark-dot { fill: var(--lav-500); } .ds-brand:hover .ds-mark-dot { animation: ds-stop-bob 0.9s ease-in-out infinite alternate; } @keyframes ds-stop-bob { from { transform: translateY(0); } to { transform: translateY(-5px); } } .ds-brand:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; } @media (prefers-reduced-motion: reduce) { .ds-brand:hover .ds-mark-dot { animation: none; } }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Header links; the current page is marked by a full stop beneath it.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link ds-is-active\" href=\"#\"><span>Writing</span></a><a class=\"ds-nav-link\" href=\"#\"><span>About</span></a></nav>",
+      "css": ".ds-nav { display: flex; gap: 0.5rem; } .ds-nav-link { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0 0.625rem; color: var(--ink-2); text-decoration: none; font: 500 0.9375rem/1 var(--sans); letter-spacing: 0.01em; transition: color 0.2s; } .ds-nav-link span { position: relative; padding: 0.375rem 0; } .ds-nav-link span::after { content: \"\"; position: absolute; left: 50%; bottom: -0.25rem; width: 0.3125rem; height: 0.3125rem; margin-left: -0.15625rem; border-radius: 50%; background: var(--lav-500); opacity: 0; transform: scale(0.4); transition: opacity 0.2s, transform 0.3s var(--ease-out); } .ds-nav-link:hover { color: var(--ink); } .ds-nav-link:hover span::after { opacity: 0.5; transform: scale(1); } .ds-nav-link.ds-is-active { color: var(--ink); } .ds-nav-link.ds-is-active span::after { opacity: 1; transform: scale(1); } .ds-nav-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Sheet with page head",
+      "kind": "card",
+      "refersTo": "sheet",
+      "description": "The white sheet that holds all writing, with a title closed by the full stop and a byline.",
+      "html": "<article class=\"ds-sheet\"><h1 class=\"ds-sheet-title\">Practical Guide to Value Objects in Go<span class=\"ds-stop\" aria-hidden=\"true\">.</span></h1><p class=\"ds-meta\"><span class=\"ds-meta-row\"><span>Fabio Elizandro</span><span>11 June 2025</span><span>5 min read</span></span></p><p class=\"ds-sheet-text\">My go to solution to this is the use of <a href=\"#\">Value Objects</a>. Let me share why they have become an essential part of my Go coding toolkit.</p></article>",
+      "css": ".ds-sheet { max-width: 50rem; background: var(--sheet); color: var(--ink); border-radius: 6px; padding: 2.5rem 3rem 3rem; box-shadow: 0 0 0 1px rgba(71, 59, 143, 0.07), 0 2px 4px rgba(53, 44, 110, 0.05), 0 12px 24px -8px rgba(53, 44, 110, 0.12), 0 40px 80px -28px rgba(53, 44, 110, 0.3); } .ds-sheet-title { margin: 0; font: 500 clamp(2rem, 1.35rem + 2.8vw, 3rem)/1.12 var(--serif); letter-spacing: -0.015em; text-wrap: balance; } .ds-stop { color: var(--lav-500); } .ds-meta { margin: 1.125rem 0 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--lav-200); overflow: hidden; color: var(--ink-2); font: 400 0.9375rem/1.4 var(--sans); letter-spacing: 0.01em; font-variant-numeric: tabular-nums; } .ds-meta-row { display: flex; flex-wrap: wrap; row-gap: 0.125rem; margin-left: -1.375rem; } .ds-meta-row > span { position: relative; padding-left: 1.375rem; white-space: nowrap; } .ds-meta-row > span::before { content: \"\"; position: absolute; left: 0.5625rem; top: 50%; width: 0.25rem; height: 0.25rem; margin-top: -0.125rem; border-radius: 50%; background: var(--lav-500); } .ds-sheet-text { margin: 0; font: 400 1.1875rem/1.7 var(--serif); text-wrap: pretty; } .ds-sheet-text a { color: var(--accent); text-decoration: underline; text-decoration-color: var(--lav-500); text-decoration-thickness: 2px; text-underline-offset: 0.2em; transition: text-decoration-color 0.2s; } .ds-sheet-text a:hover { text-decoration-color: var(--accent); } .ds-sheet-text a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Section card",
+      "kind": "nav",
+      "refersTo": "section-card",
+      "description": "The \"In this post\" card beside the sheet; the section being read is marked by a full stop.",
+      "html": "<aside class=\"ds-toc\" aria-label=\"In this post\"><p class=\"ds-toc-title\">In this post</p><ul><li><a href=\"#\">What Are Value Objects?</a></li><li><a href=\"#\" aria-current=\"location\">Practical Example: Refactoring with Value Objects in Go</a></li><li><a href=\"#\">Equality by Value</a></li><li><a href=\"#\">Wrapping Up</a></li></ul></aside>",
+      "css": ".ds-toc { width: 15.5rem; padding: 1.125rem 0.75rem 0.875rem; background: var(--sheet); border-radius: 6px; box-shadow: 0 0 0 1px rgba(71, 59, 143, 0.07), 0 2px 4px rgba(53, 44, 110, 0.04), 0 14px 28px -14px rgba(53, 44, 110, 0.22); font: 400 0.9375rem/1.35 var(--sans); } .ds-toc ul { margin: 0; padding: 0; list-style: none; } .ds-toc li + li { margin-top: 0.0625rem; } .ds-toc-title { margin: 0 0.5rem 0.625rem 1.125rem; color: var(--ink-2); font-weight: 600; font-size: 0.8125rem; letter-spacing: 0.02em; } .ds-toc a { position: relative; display: block; padding: 0.4375rem 0.5rem 0.4375rem 1.125rem; border-radius: 4px; color: var(--ink); text-decoration: none; transition: background-color 0.2s, color 0.2s; } .ds-toc a:hover { background: var(--lav-100); } .ds-toc a[aria-current] { color: var(--accent); } .ds-toc a[aria-current]::before { content: \"\"; position: absolute; left: 0.375rem; top: 1.0625rem; width: 0.3125rem; height: 0.3125rem; margin-top: -0.15625rem; border-radius: 50%; background: var(--lav-500); } .ds-toc a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Code block",
+      "kind": "custom",
+      "refersTo": "code-block",
+      "description": "A pale lavender block with the language named above it and a text-only copy button.",
+      "html": "<div class=\"ds-code\"><div class=\"ds-code-head\"><span>Go</span><button type=\"button\" class=\"ds-copy\">Copy</button></div><pre><span class=\"ds-k\">func</span> <span class=\"ds-nf\">applyDiscount</span>(percent <span class=\"ds-kt\">float64</span>) <span class=\"ds-kt\">error</span> {\n  <span class=\"ds-c\">// Business logic...</span>\n  <span class=\"ds-k\">if</span> percent &gt; <span class=\"ds-m\">100</span> {\n    <span class=\"ds-k\">return</span> errors.New(<span class=\"ds-s\">\"percentage must be at most 100\"</span>)\n  }\n  <span class=\"ds-k\">return</span> <span class=\"ds-k\">nil</span>\n}</pre></div>",
+      "css": ".ds-code { background: var(--lav-100); border: 1px solid var(--lav-200); border-radius: 6px; color: var(--ink); } .ds-code-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.25rem 0.375rem 0.25rem 1.25rem; border-bottom: 1px solid var(--lav-200); color: var(--ink-2); font: 500 0.8125rem/1 var(--sans); letter-spacing: 0.02em; } .ds-copy { min-height: 2rem; padding: 0 0.75rem; border: 0; border-radius: 4px; background: transparent; color: var(--accent); font: inherit; font-weight: 600; cursor: pointer; transition: background-color 0.2s; } .ds-copy:hover { background: var(--lav-200); } .ds-copy:active { background: var(--lav-300); } .ds-copy:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; } .ds-code pre { margin: 0; padding: 1.125rem 1.25rem; overflow-x: auto; font: 400 0.875rem/1.7 var(--mono); font-variant-ligatures: none; } .ds-k { color: var(--accent); font-weight: 700; } .ds-kt { color: var(--accent); } .ds-nf { font-weight: 700; } .ds-s { color: var(--code-string); } .ds-m { color: var(--code-number); } .ds-c { color: var(--code-comment); font-style: italic; }"
+    },
+    {
+      "name": "Quotation",
+      "kind": "card",
+      "refersTo": "blockquote",
+      "description": "A pale lavender panel in italic serif, with the attribution set upright in the label face.",
+      "html": "<blockquote class=\"ds-quote\"><p>Make it work, make it right, make it fast.</p><p class=\"ds-attribution\">— Kent Beck</p></blockquote>",
+      "css": ".ds-quote { margin: 0; padding: 1.375rem 1.5rem; background: var(--lav-100); border-radius: 6px; color: var(--ink); font: italic 400 1.1875rem/1.7 var(--serif); } .ds-quote p { margin: 0 0 0.9em; } .ds-quote p:last-child { margin-bottom: 0; } .ds-quote .ds-attribution { font: 500 0.9375rem/1.4 var(--sans); font-style: normal; color: var(--ink-2); }"
+    },
+    {
+      "name": "Post row",
+      "kind": "custom",
+      "description": "One entry in the list of posts: date, title, description, reading time. The tag marks a draft.",
+      "html": "<div class=\"ds-row\"><p class=\"ds-row-date\">11 Jun 2025</p><h2><a href=\"#\">Practical Guide to Value Objects in Go</a><span class=\"ds-tag\">Draft</span></h2><p class=\"ds-row-desc\">Why value objects have become an essential part of my Go toolkit, with a worked refactoring.</p><p class=\"ds-row-meta\">5 min read</p></div>",
+      "css": ".ds-row { display: grid; grid-template-columns: 7.25rem minmax(0, 1fr); column-gap: 1.5rem; padding: 1.75rem 0; border-bottom: 1px solid var(--lav-200); color: var(--ink); } .ds-row > * { grid-column: 2; } .ds-row .ds-row-date { grid-column: 1; grid-row: 1 / span 3; margin: 0.4375rem 0 0; } .ds-row-date, .ds-row-meta { color: var(--ink-2); font: 400 0.875rem/1.4 var(--sans); letter-spacing: 0.01em; font-variant-numeric: tabular-nums; } .ds-row-meta { margin: 0.75rem 0 0; } .ds-row h2 { margin: 0; font: 500 1.5rem/1.25 var(--serif); letter-spacing: -0.01em; } .ds-row h2 a { color: var(--ink); text-decoration: underline; text-decoration-color: transparent; text-decoration-thickness: 2px; text-underline-offset: 0.18em; transition: color 0.2s, text-decoration-color 0.2s; } .ds-row h2 a:hover { color: var(--accent); text-decoration-color: var(--lav-300); } .ds-row h2 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; } .ds-row-desc { margin: 0.625rem 0 0; color: var(--ink-2); font: 400 1.0625rem/1.6 var(--serif); } .ds-tag { display: inline-block; margin-left: 0.5rem; padding: 0.125rem 0.5rem; border-radius: 999px; background: var(--lav-100); color: var(--accent); font: 600 0.75rem/1.5 var(--sans); letter-spacing: 0.02em; vertical-align: 0.1em; }"
+    },
+    {
+      "name": "Collapsed section list",
+      "kind": "nav",
+      "refersTo": "section-list-collapsed",
+      "description": "Below 70rem the section card becomes this disclosure at the top of the sheet.",
+      "html": "<details class=\"ds-toc-inline\"><summary>In this post</summary><nav><ul><li><a href=\"#\">What Are Value Objects?</a></li><li><a href=\"#\">Equality by Value</a></li><li><a href=\"#\">Wrapping Up</a></li></ul></nav></details>",
+      "css": ".ds-toc-inline { border: 1px solid var(--lav-200); border-radius: 6px; background: var(--sheet); color: var(--ink); font: 400 0.9375rem/1.45 var(--sans); } .ds-toc-inline summary { display: flex; align-items: center; justify-content: space-between; min-height: 2.75rem; padding: 0 1rem; font-weight: 600; cursor: pointer; list-style: none; } .ds-toc-inline summary::-webkit-details-marker { display: none; } .ds-toc-inline summary::after { content: \"\"; width: 0.875rem; height: 0.875rem; background: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%238F85C2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 5l4 4 4-4'/%3E%3C/svg%3E\") center / contain no-repeat; transition: transform 0.25s var(--ease-out); } .ds-toc-inline[open] summary::after { transform: rotate(180deg); } .ds-toc-inline summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; } .ds-toc-inline nav { padding: 0.25rem 1rem 0.875rem; } .ds-toc-inline ul { margin: 0; padding: 0; list-style: none; } .ds-toc-inline li a { display: block; padding: 0.4375rem 0; color: var(--ink-2); text-decoration: none; } .ds-toc-inline li a:hover { color: var(--accent); }"
+    },
+    {
+      "name": "Whisper",
+      "kind": "custom",
+      "refersTo": "whisper",
+      "description": "A short note at the bottom of the window reporting something the visitor caused.",
+      "html": "<p class=\"ds-whisper\">Zen. Press Esc to come back.</p>",
+      "css": ".ds-whisper { display: inline-block; margin: 0; padding: 0.625rem 1rem; border-radius: 999px; background: var(--ink); color: #FFFFFF; font: 500 0.875rem/1.3 var(--sans); letter-spacing: 0.01em; white-space: nowrap; }"
+    },
+    {
+      "name": "Play Hint",
+      "kind": "custom",
+      "refersTo": "play-hint",
+      "description": "Shown for as long as the monogram's full stop is loose: it says how to stop. A white pill with soft-ink meta text, centred above the bottom of the window; the whisper sits above it while it shows.",
+      "html": "<p class=\"ds-play-hint\">Click or Esc to stop</p>",
+      "css": ".ds-play-hint { display: inline-block; margin: 0; padding: 0.4375rem 0.875rem; border-radius: 999px; background: #FFFFFF; box-shadow: 0 0 0 1px rgba(71, 59, 143, 0.07), 0 2px 4px rgba(53, 44, 110, 0.04), 0 14px 28px -14px rgba(53, 44, 110, 0.22); color: #575080; font: 500 0.8125rem/1.3 \"Hanken Grotesk\", ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.01em; white-space: nowrap; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Sheet and the Full Stop",
+    "overview": "One white sheet of paper lies lifted off a ground of barely-there lavender. The writing owns the sheet: a single column of serif text, left-aligned, with nothing beside it but a small card of section links. Everything that is not white is a tone of violet, from the near-black ink to the palest tint behind a code block, so the page reads as one colour at many strengths. The mood is clean, quiet and zen; the craft is in proportion, type and small details, never in ornament.\n\nPersonality lives in one mark. The monogram is a lowercase \"fe\" closed by a lavender full stop, and that full stop is the only element the site repeats: it closes every page title, sits under the current page in the navigation, marks the section being read, replaces the bullets in a list, separates the items of a byline, and stands three in a row where the text takes a break. It is also the site's toy: with a pointer nearby it bobs, and it can be picked up and thrown.\n\nThe ground carries a single motif: soft layered hills across its top, like mist over a valley, fading out before the first screen ends. Below them the ground is empty. The page is still when it arrives and still while someone reads; it moves only in answer to the visitor. It is not a centred white developer-blog column with blue links, and it is not decorated.",
+    "keyCharacteristics": [
+      "One white sheet, about 800px wide, with real layered depth over a near-white lavender ground.",
+      "Tones of violet only; the lavender stays very light.",
+      "A serif reading face for titles and text, a grotesque for labels, a monospace for code.",
+      "The full stop is the single recurring element and the only ornament.",
+      "Hills at the top of the ground and nowhere else.",
+      "Nothing animates on load; motion is a reply to the visitor.",
+      "One committed light look, with no dark variant."
+    ],
+    "rules": [
+      {
+        "name": "The Violet Only Rule",
+        "body": "Every colour is white or a tone of violet, with hue held between indigo and plum. No second hue enters for emphasis, status or syntax; difference is made with lightness and weight.",
+        "section": "colors"
+      },
+      {
+        "name": "The Barely There Rule",
+        "body": "Lavender surfaces stay very light: the ground, the pale fills and the hills all sit above 90% lightness with very little chroma. A lavender that reads as strong or vibrant is wrong, however well it matches.",
+        "section": "colors"
+      },
+      {
+        "name": "The Seven to One Rule",
+        "body": "Body text and code meet 7:1 contrast or better against the surface they sit on, and that includes every syntax colour on the pale code fill. Secondary text and labels meet at least 4.5:1. Full-Stop Lavender is about 3.3:1 on white, which is why it draws marks and underlines and is never used to set text.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Literata is the writing; Hanken Grotesk is the interface. Anything the author wrote is serif, and anything the site says about it (a date, a label, a control) is sans. The two never swap.",
+        "section": "typography"
+      },
+      {
+        "name": "The Sentence Case Rule",
+        "body": "Labels are set in sentence case at their natural spacing, with no more than 0.02em of tracking. No label is uppercase.",
+        "section": "typography"
+      },
+      {
+        "name": "The Shared Edge Rule",
+        "body": "The monogram, the navigation, the sheet and the footer line up on the same two edges. Nothing on the ground sits wider than the sheet except the section card.",
+        "section": "layout"
+      },
+      {
+        "name": "The Hills At The Top Rule",
+        "body": "The ground's motif occupies a band 440px tall at the very top of the page and fades to nothing from about halfway down it. It scrolls away with the page. The rest of the ground is empty, and no other surface carries a pattern.",
+        "section": "layout"
+      },
+      {
+        "name": "The Two Lifted Things Rule",
+        "body": "Only the sheet and the section card cast a shadow. Nothing inside the sheet is raised, and no shadow appears or grows in response to hover.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Tinted Shadow Rule",
+        "body": "Shadows are violet, never grey or black, and always soft and layered: a wide blur with a negative spread, cast downward.",
+        "section": "elevation"
+      },
+      {
+        "name": "The One Mark Rule",
+        "body": "The full stop is the single recurring element. It closes each page title, sits beneath the current navigation item, marks the current section, replaces list bullets, separates byline items, and stands three in a row as the break in a text. No second ornament, icon set or decorative shape joins it.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Still Page Rule",
+        "body": "Nothing animates when a page loads or changes, and nothing moves while someone is reading. Every motion is a reply to something the visitor did: a hover, a scroll, a click, a throw.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do keep all writing on the white sheet, 50rem wide, left-aligned to one inner margin, with the header and footer on the sheet's edges.",
+      "Do build every new surface from the existing tones: Sheet White for paper, `lav-100` for a quiet fill, `lav-200` for a hairline, `ink-2` for secondary text, `accent` for anything that can be followed.",
+      "Do check contrast before using a colour for text: 7:1 or better for body text and code on their own background, 4.5:1 or better for labels and secondary text.",
+      "Do close a page title with the full stop, and use the full stop wherever a marker, bullet or separator is needed.",
+      "Do set anything the author wrote in Literata and anything the site says about it in Hanken Grotesk, in sentence case.",
+      "Do separate things inside the sheet with a pale fill or a 1px `lav-200` hairline, and keep corners at 6px for surfaces and 4px for small things.",
+      "Do make new motion a reply to the visitor, give it the ease-out curve, and switch it off under `prefers-reduced-motion`.",
+      "Do keep interactive targets at least 2.75rem tall and give every one the 2px `accent` focus ring."
+    ],
+    "donts": [
+      "Don't animate anything when a page loads or changes: no fade-ins, no reveals on scroll, no page transitions.",
+      "Don't introduce a hue outside violet, including a blue link colour, or status colours in code.",
+      "Don't strengthen the lavender. The ground, the fills and the hills stay very light; a saturated or mid-tone lavender surface is out of character.",
+      "Don't set text in `lav-500`. It is for the full stop, underlines and small strokes only.",
+      "Don't add a second recurring ornament, an icon set, illustrations or emoji. The full stop is the one mark.",
+      "Don't put the hills, or any pattern, anywhere but the top of the ground, and don't make them follow the pointer.",
+      "Don't flatten the sheet into a bordered box, and don't raise anything inside it: no shadows on code blocks, quotations or rows, and no shadow that grows on hover.",
+      "Don't use grey or black shadows; shadows are violet-tinted, soft and layered.",
+      "Don't centre the reading column's text or titles, and don't let anything on the ground run wider than the sheet apart from the section card.",
+      "Don't add a dark theme or a theme switch. There is one look.",
+      "Don't give the full-stop game instructions, a score panel or any interface, and don't let it start without a deliberate press."
+    ]
+  }
+}
