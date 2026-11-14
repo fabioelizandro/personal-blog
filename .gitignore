@@ -20,3 +20,7 @@ Thumbs.db
 
 # Local files
 *.local.*
+
+# Impeccable working files (catalog reference images)
+.impeccable/reference/
+.impeccable/tmp/

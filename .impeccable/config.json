@@ -1,0 +1,48 @@
+{
+  "hook": {
+    "enabled": true,
+    "limits": {
+      "maxFindings": 5,
+      "maxChars": 8000
+    }
+  },
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "marketing-buzzword",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/*.html"
+        ],
+        "createdAt": "2026-11-14T11:51:37.743Z",
+        "reason": "Agent: decision sketches quote the author's real post copy verbatim ('enterprise-grade applications' in content/posts/practical-guide-value-objects-golang.md)"
+      },
+      {
+        "rule": "marketing-buzzword",
+        "value": "*",
+        "files": [
+          "public/**"
+        ],
+        "createdAt": "2026-11-14T12:32:04.574Z",
+        "reason": "Agent: the phrase is the author's own published prose (content/posts/practical-guide-value-objects-golang.md) rendered into build output, not interface copy"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#000",
+        "createdAt": "2026-11-14T13:23:44.615Z",
+        "reason": "Agent: #000 appears only as the opaque stop of the hills' mask-image gradient in assets/css/site.css; a mask stop is alpha, not a painted colour"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "layouts/**"
+        ],
+        "createdAt": "2026-11-14T13:23:44.632Z",
+        "reason": "Agent: the detector renders Hugo templates without the stylesheet, which is linked through Hugo Pipes ({{ $css.RelPermalink }}), so every computed text colour reads as the browser default black"
+      }
+    ]
+  }
+}
