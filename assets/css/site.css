@@ -619,7 +619,7 @@ a { color: var(--accent); }
 }
 @media (min-width: 44rem) {
   .post-row { display: grid; grid-template-columns: 7.25rem minmax(0, 1fr); column-gap: 1.5rem; }
-  .post-row-date { grid-column: 1; grid-row: 1 / span 3; margin: 0.4375rem 0 0; }
+  .post-row-date { grid-column: 1; grid-row: 1 / span 3; }
   .post-row > :not(.post-row-date) { grid-column: 2; }
   .post-row.is-lead .post-row-date { margin-top: 0.25rem; }
 }
