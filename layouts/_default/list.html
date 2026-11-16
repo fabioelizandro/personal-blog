@@ -1,6 +1,13 @@
 {{ define "main" }}
 <div class="sheet">
-    <h1 class="list-title">{{ if eq .Type "posts" }}Writing{{ else }}{{ .Title }}{{ end }}<span class="stop" aria-hidden="true">.</span></h1>
-    {{ partial "post-list.html" .RegularPagesRecursive }}
+    {{ if eq .Type "posts" }}
+    <h1 class="visually-hidden">Writing</h1>
+    {{ partial "post-list.html" (dict "pages" .RegularPagesRecursive "lead" true) }}
+    {{ else }}
+    <header class="post-header">
+        <h1>{{ .Title }}<span class="stop" aria-hidden="true">.</span></h1>
+    </header>
+    {{ partial "post-list.html" (dict "pages" .RegularPagesRecursive "lead" false) }}
+    {{ end }}
 </div>
 {{ end }}

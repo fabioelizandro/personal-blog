@@ -22,7 +22,7 @@ Real experience from someone who has been in the trenches since 2011: a Principa
 
 - Posts are Markdown files in `content/posts/`, written and published by one person, a few times a year.
 - Posts are long-form (roughly 650 to 1,700 words) and mix prose, Go code blocks, blockquotes with attributions, lists, and the occasional image.
-- Readers usually arrive directly on a post, not on the home page. The home page is a short list of posts; there is one static page, About.
+- Readers usually arrive directly on a post, not on the home page. The home page is a short list of posts with no title of its own; the latest post is the first in the list and is opened up, showing its first paragraph, a link to continue reading and links to its sections. There is one static page, About.
 - Reading happens on both desktop and phone.
 
 ## Capabilities and Constraints

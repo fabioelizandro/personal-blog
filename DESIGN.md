@@ -38,6 +38,12 @@ typography:
     fontSize: "1.25rem"
     fontWeight: 600
     lineHeight: 1.3
+  lead-title:
+    fontFamily: "Literata, Georgia, 'Times New Roman', serif"
+    fontSize: "clamp(1.625rem, 1.3rem + 1.4vw, 2rem)"
+    fontWeight: 500
+    lineHeight: 1.18
+    letterSpacing: "-0.015em"
   list-title:
     fontFamily: "Literata, Georgia, 'Times New Roman', serif"
     fontSize: "clamp(1.3125rem, 1.2rem + 0.5vw, 1.5rem)"
@@ -124,6 +130,10 @@ components:
     textColor: "{colors.ink}"
   prose-link:
     textColor: "{colors.accent}"
+  continue-link:
+    textColor: "{colors.accent}"
+    typography: "{typography.label}"
+    padding: "0.75rem 0"
   code-block:
     backgroundColor: "{colors.code-bg}"
     textColor: "{colors.ink}"
@@ -243,13 +253,14 @@ A single hue family, violet, held between a near-black ink and a ground that is 
 **Character:** A bookish serif does all the reading and all the titling, at a medium weight that is confident without shouting. A plain, slightly warm grotesque stays small and quiet around it for everything that is interface rather than writing. All three families are self-hosted variable fonts.
 
 ### Hierarchy
-- **Display** (500, clamp(2rem, 1.35rem + 2.8vw, 3rem), 1.12, -0.015em): the one title on a page: a post's title, "Writing", the About title. Left-aligned, balanced wrapping, closed by a full stop. The not-found title uses the same style one step smaller (clamp(1.875rem, 1.4rem + 2vw, 2.5rem)).
+- **Display** (500, clamp(2rem, 1.35rem + 2.8vw, 3rem), 1.12, -0.015em): the one title on a page: a post's title, the About title. Left-aligned, balanced wrapping, closed by a full stop. The not-found title uses the same style one step smaller (clamp(1.875rem, 1.4rem + 2vw, 2.5rem)).
+- **Lead title** (500, clamp(1.625rem, 1.3rem + 1.4vw, 2rem), 1.18, -0.015em): the title of the latest post, in the first row of the list of posts. It is a row's title made larger, not a page title, so it has no full stop.
 - **Headline** (600, clamp(1.4375rem, 1.3rem + 0.6vw, 1.625rem), 1.25, -0.01em): section headings inside a post.
 - **Title** (600, 1.25rem, 1.3): sub-headings inside a section.
-- **List title** (500, clamp(1.3125rem, 1.2rem + 0.5vw, 1.5rem), 1.25, -0.01em): a post's title in the list of posts.
+- **List title** (500, clamp(1.3125rem, 1.2rem + 0.5vw, 1.5rem), 1.25, -0.01em): a post's title in a row of the list of posts.
 - **Body** (400, clamp(1.0625rem, 1rem + 0.35vw, 1.1875rem), 1.7): running text, with pretty wrapping and 1.35em between paragraphs. The sheet's width and padding give a measure of roughly 60 to 65 characters. Bold is 600. Quotations are the same face in italic.
-- **Label** (Hanken Grotesk 500, 0.9375rem, 0.01em): navigation, the section card's entries, quotation attributions, tables.
-- **Small label** (Hanken Grotesk 500 to 600, 0.8125rem, 0.02em): the section card's heading, the language name and copy button above a code block, "Newer" and "Older".
+- **Label** (Hanken Grotesk 500, 0.9375rem, 0.01em): navigation, the section card's entries, the section links in the lead, quotation attributions, tables, and "Continue reading" at weight 600.
+- **Small label** (Hanken Grotesk 500 to 600, 0.8125rem, 0.02em): the heading of the section card and of the lead's sections, the language name and copy button above a code block, "Newer" and "Older".
 - **Meta** (Hanken Grotesk 400, 0.875rem to 0.9375rem, 0.01em, tabular figures): bylines, dates, reading times, the footer.
 - **Code** (JetBrains Mono 400, 0.875rem, 1.7, ligatures off): code blocks; 0.8125rem at phone widths. Inline code is 0.86em of the surrounding text.
 
@@ -261,6 +272,8 @@ A single hue family, violet, held between a near-black ink and a ground that is 
 ## Layout
 
 The page is a column in three parts: the header, the sheet, the footer, all sharing one width (50rem) and one pair of edges, centred on the ground with a fluid gutter (clamp(0.75rem, 3vw, 2rem)). The header holds the monogram alone at the sheet's left edge and the navigation at its right edge; the footer mirrors it with the copyright line at the left and outside links at the right. Inside the sheet, everything is left-aligned to one inner margin (clamp(1.375rem, 7vw, 5.5rem) of horizontal padding).
+
+The home page has no title of its own: the sheet is one list of posts, newest first, and every post is a row on the same two columns. The newest row is opened up, with a larger title, the post's first paragraph and a list of its sections, so the page starts with something to read and several ways into it, and it stays a row so that it is never taken for the title of the page. On a laptop the second row is in view without scrolling.
 
 A post with three or more sections gets a list of them. From 84rem up the sheet stays centred in the window and the list is a white card in the right margin, sticky 1.5rem from the top. Between 70rem and 84rem the sheet and the card are centred as a pair, 1.25rem apart, and the header and footer keep to the sheet's edges. Below 70rem the card is replaced by a collapsed "In this post" disclosure at the top of the sheet.
 
@@ -315,7 +328,7 @@ Components are quiet and typographic: most are text with a precise hover, and th
 - **Background:** Sheet White on Mist Ground.
 - **Shadow Strategy:** the Sheet shadow; no border.
 - **Internal Padding:** clamp(2rem, 6vw, 4.5rem) above, clamp(1.375rem, 7vw, 5.5rem) at the sides, clamp(2.5rem, 6vw, 5rem) below.
-- **Page head:** the Display title closed by a full stop, then on a post a byline in Meta type (author, date, reading time, separated by small full stops that never begin a line), then a hairline.
+- **Page head:** the Display title closed by a full stop, then on a post a byline in Meta type (author, date, reading time, separated by small full stops that never begin a line), then a hairline. The home page has no page head: its heading, "Writing", is there for screen readers only, and the navigation already says where the visitor is.
 
 ### Section list
 - **Card (70rem and up):** a white 6px card with the Card shadow, headed "In this post" in Small label type and Soft Ink. Entries are Label type in Violet Ink, so the list reads as easily as the text. Hover fills an entry with Pale Lavender; the section being read turns Deep Lavender and gains a full stop at its left. The card is sticky and scrolls internally if it is taller than the window.
@@ -324,6 +337,7 @@ Components are quiet and typographic: most are text with a precise hover, and th
 ### Links in text
 - **Style:** Deep Lavender with a 2px Full-Stop Lavender underline offset 0.2em. On hover the underline deepens to Deep Lavender.
 - **Titles as links:** a post title in the list is Violet Ink with no visible underline; on hover it turns Deep Lavender and a 2px Pressed Lavender underline appears. The "Newer" and "Older" titles at the end of a post are Deep Lavender and gain the same underline on hover.
+- **Continue reading:** the one link that is a label and not writing: Label type at weight 600 in Deep Lavender, with the same 2px Full-Stop Lavender underline as a link in text, offset 0.3em, deepening to Deep Lavender on hover. It is text only, with no arrow and no fill, and its target is 2.75rem tall.
 
 ### Code
 - **Block:** Pale Lavender fill, hairline border, 6px corners, 1.125rem by 1.25rem of padding, horizontal scroll for long lines. A head strip above the code names the language at the left in Small label type and holds the copy button at the right, divided from the code by a hairline.
@@ -335,6 +349,8 @@ Components are quiet and typographic: most are text with a precise hover, and th
 - **Style:** a Pale Lavender panel with 6px corners and no border or side stripe, text in italic Literata. A closing line that starts with a dash is the attribution, set upright in Label type and Soft Ink.
 
 ### List of posts
+- **Lead:** the first row, holding the latest post. It keeps the row's shape, with the date in the same column and form as every other row, and differs in three ways: the title is in Lead title type; the description gives way to the post's first paragraph, whole and never more than the one, at the description's size but in Violet Ink because it is the writing itself; and the reading time gives way to a line with "Continue reading" followed by the reading time, separated by a small full stop.
+- **Lead sections:** when the latest post has three or more sections, the lead ends with them: "In this post" in Small label type and Soft Ink, then the section titles in Label type and Violet Ink, each behind a full stop, in two columns that read down and then across (one column on a narrow phone). Each links straight to that section of the post and turns Deep Lavender on hover; nothing is filled or underlined. It is the section card's list brought into the row, so it uses the same words and the same type.
 - **Row:** date in Meta type, title in List title type, a one-paragraph description in Soft Ink, reading time in Meta type; rows are divided by hairlines. From 44rem the date sits in its own left column.
 - **Tag:** a small Pale Lavender pill with Deep Lavender text at weight 600 and 0.75rem; used to mark a draft.
 

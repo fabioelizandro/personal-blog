@@ -1,10 +1,30 @@
+{{/* The list of posts, newest first. With "lead" set, the newest is opened up:
+     a larger title, its first paragraph in place of the description, a link
+     to go on reading, and the post's sections as ways straight into it. */}}
+{{ $lead := .lead }}
+{{ with .pages.ByDate.Reverse }}
 <ul class="posts">
-    {{ range . }}
-    <li class="post-row">
+    {{ range $i, $post := . }}
+    {{ $opened := and $lead (eq $i 0) }}
+    <li class="post-row{{ if $opened }} is-lead{{ end }}">
         <p class="post-row-date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time></p>
         <h2><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>{{ if .Draft }}<span class="tag">Draft</span>{{ end }}</h2>
+        {{ if $opened }}
+        {{ range findRE `(?s)<p>.*?</p>` .Content 1 }}
+        <div class="prose">{{ . | safeHTML }}</div>
+        {{ end }}
+        <p class="post-row-more"><a href="{{ .RelPermalink }}">Continue reading<span class="visually-hidden">: {{ .Title | plainify }}</span></a><span>{{ .ReadingTime }} min read</span></p>
+        {{ if ge (len (findRE `<h2` .Content)) 3 }}
+        <div class="post-row-sections">
+            <p>In this post</p>
+            {{ .TableOfContents | replaceRE ` id="TableOfContents"` ` aria-label="Sections of this post"` | replaceRE `href="#` (printf `href="%s#` .RelPermalink) | safeHTML }}
+        </div>
+        {{ end }}
+        {{ else }}
         {{ with .Description }}<p class="post-row-desc">{{ . | truncate 210 | markdownify }}</p>{{ end }}
         <p class="post-row-meta">{{ .ReadingTime }} min read</p>
+        {{ end }}
     </li>
     {{ end }}
 </ul>
+{{ end }}
